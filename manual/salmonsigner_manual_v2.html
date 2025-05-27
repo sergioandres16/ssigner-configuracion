@@ -1,0 +1,1022 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SSigner | Manual de Usuario</title>
+</head>
+<body>
+
+<div id="contenido" style="width:100%;" align="center">
+<div  style="width:30px; border:0px solid red;   right:10px;  position:fixed;  ">
+	<a href="#contenido"><img src="salmonsigner_imagenes/subir.png" title="Ir a contenido"></a>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top" style="background-color:#53636e;" bgcolor="#53636e;">
+    
+    <br>
+    <br>
+    <table width="583" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left" valign="top" bgcolor="#FFFFFF" style="background-color:#FFFFFF;"><img src="images/header.jpg" width="583" height="118"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#FFFFFF" style="background-color:#FFFFFF;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="35" align="left" valign="top">&nbsp;</td>
+            <td align="left" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top">
+                	<div style="color:#245da5; font-family:Times New Roman, Times, serif; font-size:48px;">Manual de Usuario</div>
+					<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:12px;">Salmonsigner v1.0.0</div><br></td>
+              </tr>
+			  <tr>
+				<td>
+				<table  width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor=""  color="red">
+				<tr>
+					<td align="left"  valign="top">
+					<br>
+					<br>
+						<div style="border:1px;color:#245da5; font-family:Times New Roman, Times, serif; font-size:16px;">Contenido</div>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="" align="left" valign="top" style="font-family: Verdana, Geneva, sans-serif">
+						<ul style="list-style:none; margin: 10px;padding: 0;">
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a  style="text-decoration:none"href="#proceso_firma" >Proceso de firma de documentos</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a  style="text-decoration:none"href="#proceso_configuracion_certificado" >Selección de certificado</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a  style="text-decoration:none" href="#menu_certificado" >Certificados </a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;">
+								
+									<ul  style="list-style:none">
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#menu_certificado_sub_menu_ordenador" >Certificado de ordenador (WINDOWS-MY)</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#menu_certificado_sub_menu_dispositivo" >Certificado de dispostivio (PKCS11)</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#menu_certificado_sub_menu_archivo" >Certificado de archivo (PKCS12)</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#menu_certificado_sub_menu_validaciones" >Validaciones de certificados</a></li></div>
+									</ul>
+								
+							</div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#maestro" >Maestros</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;">
+							
+									<ul  style="list-style:none">
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_registrar_servicio_sello_tiempo" >Registrar un nuevo servicio de sello de tiempo</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_actualizar_servicio_sello_tiempo" >Actualizar servicio de sello de tiempo</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_eliminar_servicio_sello_tiempo" >Eliminar servicio de sello de tiempo</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_registrar_token_driver" >Registrar un nuevo driver de token</a></li></div>
+									
+									</ul>
+							
+							</div>
+							
+						
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_dibujar_firma" >Dibujar firma</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_configurar_carpeta_salida" >Configurar carpetas de salida.</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_configurar_motivo_localidad" >Agregar motivo y localidad</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#menu_ayuda" >Ayuda</a></li></div>
+							<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;">
+								
+									<ul  style="list-style:none">
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_abrir_ventana_acerca_de">Acerca de</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#sub_menu_soporte">Soporte</a></li></div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;">
+											
+												<ul  style="list-style:none">
+													<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_abrir_ventana_contactenos">Contáctenos</a></li></div>
+												</ul>
+											
+										</div>
+										<div style="font-family: Verdana, Geneva, sans-serif; color:#898989; font-size:10px;"><li><a style="text-decoration:none" href="#proceso_registrar_licencia">Registrar licencia</a></li></div>
+									</ul>
+							
+							</div>
+						<ul>
+					</td>
+				</tr>
+			</table>
+				</td>
+			  </tr>
+              <tr id="proceso_firma">
+                <td align="left" valign="top">
+				<br>
+					 <div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Proceso de firma de documentos.</div>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1) Al iniciar el módulo de firma, solicitará de la selección de o los documentos a firmar.
+                 <br>
+				</td>
+              </tr>
+				<tr>
+                <td align="left" valign="top">
+					 
+					<img src="salmonsigner_imagenes/1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">&nbsp;</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					2) Presionando CTRL + A, podemos selecccionar todos los documentos, caso contrario seleccione la que desee firmar. 
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/2.jpg" width="512" height="296" vspace="10">
+				</td>
+				<tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+
+                <br>
+					3) En la tabla se listarán los documentos seleccionados en el punto anterior.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/3.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					4) Seleccionamos el certificado, haciendo clic o doble clic a uno de ellos. Internamente hay una validación del mismo.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/4.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					5) Procedemos a firmar haciendo clic en el boton "Firmar".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/5.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					6) El proceso de firma dará inicio. Conforme vayan firmándose los documentos, La columna "Estado" de la lista cambia a "Firmado", de igual manera, hay un conteo de documentos firmados debajo de la misma.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/6.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					7) Para observar los documentos firmados, clic en el botón "Ver documentos firmados". 
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/7.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					8) Seguido, seleccione el documentos firmado a visualizar.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/8.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					9) A continuación observará el documento firmado con las siguientes características.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/9.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+
+            </table>
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  
+              <tr id="proceso_configuracion_certificado">
+                <td align="left" valign="top">
+					 <div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Selección de certificado</div>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1 Clic  en la la pestaña "Certificado"
+                 <br>
+				</td>
+              </tr>
+				<tr>
+                <td align="left" valign="top">
+					 
+					<img src="salmonsigner_imagenes/a.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">&nbsp;</td>
+              </tr>
+			  <tr id="menu_certificado_sub_menu_ordenador">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Certificado de Ordenador (WINDOWS-MY)
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.1 Clic opción "Ordenador" 
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/b_1.jpg" width="512" height="296" vspace="10">
+				</td>
+				</tr>
+			<tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+
+                <br>
+					1.1.1 Seleccionar el certificado.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/b_1_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.1.2  Automáticamente el certificado se agregará en la tabla de "Certificado seleccionado".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/b_1_2.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr id="menu_certificado_sub_menu_dispositivo">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Certificado de dispostivio (PKCS11)
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.2 Clic opción "Dispositivo".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/c_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+					  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.2.1 Ingresar PIN.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/c_1_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+
+                <br>
+					1.2.2 Seleccionar el certificado.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/c_1_2.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.2.3  Automáticamente el certificado se agregará en la tabla de "Certificado seleccionado".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/c_1_3.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr id="menu_certificado_sub_menu_archivo">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Certificado de archivo (PKCS12)
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3 Clic opción "Archivo".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+					  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3.1 Clic al boton examinar(...). 
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+
+                <br>
+					1.3.2 Se abre la siguiente ventana.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1_2.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3.3 Seleccionar el certificado ya sea con extensión .p12 o .pfx.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1_3.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+			  
+			   <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3.4 Ingresar el PIN del certificado seleccionado.
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1_4.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+			   <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3.5 Automáticamente el certificado se agregará en la tabla de "Certificado seleccionado".
+                 <br>
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/d_1_5.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  <tr id="menu_certificado_sub_menu_validaciones">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Validaciones de certificados
+                 <br>
+				</td>
+              </tr>
+			  
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.4 Clic opción "Validaciones".
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/e_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.4.1 Seleccionar las validaciones oportunas para aplicar al certificado.
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/e_1_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  <tr id="maestro">
+                <td align="left" valign="top">
+					 <div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Maestros</div>
+				</td>
+              </tr>
+
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1 Clic  en la la pestaña "Maestros"
+                <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr id="proceso_registrar_servicio_sello_tiempo">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Registrar un nuevo servicio de sello de tiempo.
+                 <br>
+				</td>
+              </tr>
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.1 Clic opción "Servicios de Sello de Tiempo (TimeStamp)".
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.2 Ingresar los datos necesarios y  clic en el boton "Guardar registro".
+						<br>
+						</td>
+					</tr>
+						<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/f_1_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.3 Se agrega un nuevo registro en la tabla.
+						<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/f_1_2.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>					
+				 <tr id="proceso_actualizar_servicio_sello_tiempo">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Actualizar servicio de sello de tiempo
+                 <br>
+				</td>
+              </tr>
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.1 Seleccionar un registro de la lista de Servidores de Servicio de Sello de Tiempo.
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1_3.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.2  Editar de ser necesario  y  clic en el boton "Actualizar registro".
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1_4.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.3 Se actualiza el registro seleccionado.
+						<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/f_1_5.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+			<tr id="proceso_eliminar_servicio_sello_tiempo">
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+                <br>
+					Eliminar servicio de sello de tiempo.
+                 <br>
+				</td>
+              </tr>
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.1 Seleccionar un registro de la lista de Servidores de Servicio de Sello de Tiempo.
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1_6.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.2  Clic en el boton "Eliminar registro".
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1_7.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  <tr>
+                <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+                <br>
+					1.3 Se actualiza el registro seleccionado.
+                 <br>
+				</td>
+              </tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/f_1_8.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+			  
+				<tr id="proceso_registrar_token_driver">
+					<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+					<br>
+						Registrar un nuevo driver de token
+					<br>
+					</td>
+				</tr>			  
+				<tr>
+					<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+					<br>
+						1.1 Seleccionar la opción "Drivers de dispositivos tokens (PKCS11)".
+					<br>
+					</td>
+				</tr>
+			  	 <tr>
+                <td align="left" valign="top">
+					<img src="salmonsigner_imagenes/g_1.jpg" width="512" height="296" vspace="10">
+				</td>
+              </tr>
+			  
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.2 Ingresar los datos necesarios.
+						<br>
+						</td>
+					</tr>
+						<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/g_1_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.3 Clic en el boton "Guardar registro".
+						<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/g_1_2.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.4 Se agrega un nuevo registro en la tabla.
+						<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/g_1_3.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr id="proceso_actualizar_token_driver">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+						<br>
+							Actualizar driver de token
+						<br>
+						</td>
+					</tr>	
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1.1  Seleccionar un driver de la lista.
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/h_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+			  
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1.2  Editar de ser necesario  y  clic en el botón "Actualizar registro".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/h_1_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+						<br>
+							1.3 Se actualiza el registro seleccionado.
+						<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/h_1_2.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+					<tr id="proceso_eliminar_token_driver">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+							<br>
+								Eliminar driver de token
+							<br>
+						</td>
+					</tr>
+			  
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1.1 Seleccionar un registro de la Lista de drivers registrados. Clic en el boton "Eliminar registro".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/i_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1.2 Se actualiza el registro seleccionado.
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/i_1_1.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>	
+					<tr id="proceso_dibujar_firma">
+						<td align="left" valign="top">
+							<div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Dibujar firma</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1 Clic en la pestaña "Dibujar Firma" 
+							<br>
+						</td>
+					</tr>	
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/10.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>					
+					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2 Seleccionar "Firma visible" y realizar el dibujo. 
+							<br>
+						</td>
+					</tr>					
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/11.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								3 Clic en boton "Guardar cambios".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/12.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr id="proceso_configurar_carpeta_salida">
+						<td align="left" valign="top">
+							<div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Configurar carpetas de salida.</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1. Clic en la pestaña "Configurar carpetas". 
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/13.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>					
+					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2. Determinar las carpetas de salida para los documentos firmados y las descargas de la crl y la tsl. Seguido, clic al botón "Guardar cambios".
+							<br>
+						</td>
+					</tr>					
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/14.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr id="proceso_configurar_motivo_localidad">
+						<td align="left" valign="top">
+							<div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Agregar motivo y localidad</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1. Clic en la  pestaña "Datos estras/Motivo y localidad".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/15.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+				
+					
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2. Ingresar los datos de ser necesario.Clic al botón "Guardar cambios". De no querer que vuelva a abrir la ventana quitarle el check "No volver a motrar este cuadro de diálogo"
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/16.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+					
+					<tr id="menu_ayuda">
+						<td align="left" valign="top">
+							<div style="color:#3482ad; font-size:19px; font-family:Arial, Helvetica, sans-serif; ">Ayuda</div>
+						</td>
+					</tr>
+					<tr id="proceso_abrir_ventana_acerca_de">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+							<br>
+								Acerca de
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1. Clic en la  pestaña "Ayuda/Acerca de".
+							<br>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/17.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>	
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2. Se abre la siguiente ventana, resumiendo las características de Salmonsigner.
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/18.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+					<tr id="sub_menu_soporte">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+							<br>
+								Soporte
+							<br>
+						</td>
+					</tr>
+					
+					<tr id="proceso_abrir_ventana_contactenos">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+							<br>
+								Contáctenos
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1. Clic en la  pestaña "Ayuda/Soporte/Contáctenos".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/19.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2. Se abre la siguiente ventana, indicando los detalles de la empresa y opciones de consulta para brindarles la ayuda pertinente.
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/20.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					
+					
+					<tr id="proceso_registrar_licencia">
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#3482ad;">
+							<br>
+								Registrar licencia
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								1. Clic en la  pestaña "Ayuda/Licencia".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/21.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								2. Se abre la siguiente ventana, para registrar la licencia correspondiente.
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/22.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#525252;">
+							<br>
+								3. Ingrese la licencia correspondiente y clic en el botón "Activar".
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<img src="salmonsigner_imagenes/23.jpg" width="512" height="296" vspace="10">
+						</td>
+					</tr>
+	            </table>
+			</td>
+            <td width="35" align="left" valign="top">&nbsp;</td>
+          </tr>
+        </table>
+		</td>
+      </tr>
+	  
+	  
+	  
+      <tr>
+        <td align="left" valign="top" bgcolor="#3d90bd" style="background-color:#3d90bd;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="35">&nbsp;</td>
+            <td height="50" valign="middle" style="color:#FFFFFF; font-size:11px; font-family:Arial, Helvetica, sans-serif;">
+			Copyright © 2016 <b>SALMON CORP</b>. Todos los Derechos Reservados.</td>
+            <td width="35">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+	  
+	  
+	  
+	  
+  </table>
+    <br>
+    <br></td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+</html>
