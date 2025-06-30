@@ -466,7 +466,7 @@ public class ClsCanvasPanel extends JPanel implements MouseMotionListener
                         g2.setPaint(Color.BLACK);
                         g2.drawString(infoFirmas[i], x1 + 1, y1 + 32);
                         g2.drawString(dateFirmas[i], x1 + 1, y1 + 21);
-                        g2.drawString("Firmado por", x1 + 1, y1 + 10);
+                        g2.drawString("Firmado digitalmente por:", x1 + 1, y1 + 10);
                     }
                     catch(Exception e)
                     {

@@ -111,7 +111,7 @@ public class Firmador
     private String c_area = "";
     private String textoJuntoFirma = "";
     private String tipo_resumen="SHA-1";
-    private String textoFirmador = "Firmado por:";
+    private String textoFirmador = "Firmado digitalmente por:";
     private JLabel contador;
     private static List<String> listarutas=new ArrayList<>();
     private String doc_carpeta_salida_ruta="";
@@ -798,7 +798,7 @@ public class Firmador
                             c_nombr0 = c_nombre;
                         }
 
-                        textofirma += "Firmado por " + c_nombr0 + "\n";
+                        textofirma += "Firmado digitalmente por: " + c_nombr0 + "\n";
 
                         if (!TextoJuntoFirma.isEmpty()) {
                             textofirma = textofirma + TextoJuntoFirma + "\n";

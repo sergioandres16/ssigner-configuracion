@@ -845,7 +845,7 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
             pnlDocumentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlDocumentoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 399, Short.MAX_VALUE)
+                .addComponent(lblInfo, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
                 .addContainerGap())
         );
         pnlDocumentoLayout.setVerticalGroup(
@@ -1086,7 +1086,12 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
 
         jLabel1.setText("Texto junto al nombre del firmante:");
 
-        txtTextoFIrmante.setText("Firmado por:");
+        txtTextoFIrmante.setText("Firmado digitalmente por:");
+        txtTextoFIrmante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTextoFIrmanteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlConfiguracionLayout = new javax.swing.GroupLayout(pnlConfiguracion);
         pnlConfiguracion.setLayout(pnlConfiguracionLayout);
@@ -1138,7 +1143,7 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
                                 .addGap(21, 21, 21)
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cboalgoritmo, 0, 229, Short.MAX_VALUE))))
+                                .addComponent(cboalgoritmo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(pnlConfiguracionLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(pnlConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1187,7 +1192,7 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTextoFIrmante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_logo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -1350,7 +1355,7 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(pnlPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 905, Short.MAX_VALUE))
+                        .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 905, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(pnlBarra6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1364,7 +1369,7 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
                     .addComponent(pnlBarra6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ctrl_lbl_cerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 614, Short.MAX_VALUE)
+                .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 614, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1844,6 +1849,10 @@ public final class frmVisorPdf extends javax.swing.JDialog  implements ActionLis
     {//GEN-HEADEREND:event_txtTamanioFocusLost
         frmConfigurador.configuracion.setVg_firma_visible_tamanio_fuente(CConstantes.Yconvertiranumerofloat(txtTamanio.getText()));
     }//GEN-LAST:event_txtTamanioFocusLost
+
+    private void txtTextoFIrmanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTextoFIrmanteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTextoFIrmanteActionPerformed
 
    
     @Override

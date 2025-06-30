@@ -7,6 +7,7 @@ import Clases.So;
 import Entidades.Firma;
 import Entidades.Firmante;
 import Entidades.Firmador;
+import Metodos.ValidadorLicencia;
 import Global.CConstantes;
 import static Global.CConstantes.APLICACION_NOMBRE;
 import Global.CLog;
@@ -1793,138 +1794,68 @@ public final class frmConfigurador extends javax.swing.JFrame
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[])
+   public static void main(String args[])
+{
+    /* Create and display the form */
+    java.awt.EventQueue.invokeLater(new Runnable()
     {
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable()
+        @Override
+        public void run()
         {
-            @Override
-            public void run()
-            {
-                frmConfigurador formulario = new frmConfigurador();
-                String message = "";
-                // chequeo de licencia
-                /*
-                String address = "No Found";
-                InetAddress lanIp = null;
-
-                //https://stackoverflow.com/questions/6164167/get-mac-address-on-local-machine-with-java
-                boolean isMacValid = false;
-
-                String ipAddress = null;
-                Enumeration<NetworkInterface> net = null;
-
-                try
-                {
-                    net = NetworkInterface.getNetworkInterfaces();
-                } 
-                catch (SocketException ex)
-                {
-                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
-                    writelog("Error: " + ex.getMessage());
-                    System.exit(0); // licencia no válida
-                }
-
-                if (net == null || !net.hasMoreElements())
-                {
-                    JOptionPane.showMessageDialog(null, "Error: " + "No se han enmcontrado interfaces de red");
-                    writelog("Error: " + "No se han enmcontrado interfaces de red");
-                    System.exit(0); // licencia no válida
-                }
-                
-                while (net.hasMoreElements()) 
-                {
-                    NetworkInterface element = net.nextElement();
-                    Enumeration<InetAddress> addresses = element.getInetAddresses();
-
-                    try
-                    {
-                        while (addresses.hasMoreElements())// && !isVMMac(element.getHardwareAddress()))
-                        {
-                            InetAddress ip = addresses.nextElement();
-                            ipAddress = ip.getHostAddress();
-                            
-                            try
-                            {
-                                lanIp = InetAddress.getByName(ipAddress);
-                            }
-                            catch (UnknownHostException ex)
-                            {
-                                JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
-                                writelog("Error: " + ex.getMessage());
-                                System.exit(0); // licencia no válida
-                            }
-
-                            address = getMacAddress(lanIp);
-                            
-                            if(address.isEmpty())
-                                continue;
-
-                            Properties p = new Properties();
-
-                            try (FileInputStream fisPropiedades = new FileInputStream(new File(Global.CConstantes.RUTAPROPIEDADES)))
-                            {
-                                p.load(fisPropiedades);
-                            }
-                            catch (Exception ex)
-                            {
-                                JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
-                                writelog("Error: " + ex.getMessage());
-                                System.exit(0); // licencia no válida
-                            }
-
-                            URL url = null;
-                            try
-                            {
-                                url = new URL(p.get("servicioweb.url").toString());
-
-                                Licencia_Service serv = new Global.Licencia_Service(url);
-                                Licencia licen = serv.getLicenciaPort();
-
-                                isMacValid = licen.validar(address);
-                                //isMacValid = licen.validar("10-62-E5-4E-A1-31"); //testing
-                            }
-                            catch (WebServiceException e)
-                            {
-                                isMacValid = false;
-                                //JOptionPane.showMessageDialog(null, "Error: " + url.toString() + " : " + e.getMessage());
-                                writelog("Error: " + url.toString() + " : " + e.getMessage());
-                                message = e.getMessage();
-                            }
-                            catch (Exception ex)
-                            { 
-                                isMacValid = false;
-                                //JOptionPane.showMessageDialog(null, "Error: " + url.toString() + " : " + ex.getMessage());
-                                writelog("Error: " + url.toString() + " : " + ex.getMessage());
-                                //System.exit(0); // licencia no válida
-                            }
-
-                            if (isMacValid)
-                                break;
-                        }
+            // Variable de control para validación (0 = no validar, 1 = validar)
+            int validarLicencia = 0; // Cambia a 0 para desactivar validación
+            
+            if (validarLicencia == 1) {
+                // VALIDACIÓN DE LICENCIA AL INICIO
+                try {
+                    System.out.println("Iniciando validación de licencia...");
+                    
+                    // Obtener la MAC address local
+                    String macLocal = ValidadorLicencia.obtenerMacLocal();
+                    if (macLocal == null || macLocal.isEmpty()) {
+                        JOptionPane.showMessageDialog(null, 
+                            "No se pudo obtener la dirección MAC del equipo.\n" +
+                            "El programa no puede continuar.",
+                            "Error de Licencia", JOptionPane.ERROR_MESSAGE);
+                        ValidadorLicencia.escribirLog("No se pudo obtener MAC address");
+                        System.exit(1); // Salir con código de error
                     }
-                    catch (Exception ex)
-                    {
-                        JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
-                        writelog("Error: " + ex.getMessage());
-                        System.exit(0); // licencia no válida
+                    
+                    System.out.println("MAC Address encontrada: " + macLocal);
+                    ValidadorLicencia.escribirLog("MAC Address encontrada: " + macLocal);
+                    
+                    // Validar la licencia con el servicio web
+                    boolean licenciaValida = ValidadorLicencia.validarLicencia(macLocal);
+                    if (!licenciaValida) {
+                        // La licencia no es válida, el mensaje ya fue mostrado en ValidadorLicencia
+                        ValidadorLicencia.escribirLog("Licencia no válida para MAC: " + macLocal);
+                        System.exit(1); // Salir con código de error
                     }
-
-                    if (isMacValid)
-                        break;
+                    
+                    // Si llegamos aquí, la licencia es válida
+                    System.out.println("Licencia válida. Iniciando aplicación...");
+                    ValidadorLicencia.escribirLog("Licencia válida para MAC: " + macLocal);
+                    
+                } catch (Exception e) {
+                    // Error general no manejado
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(null, 
+                        "Error al iniciar la aplicación:\n" + e.getMessage(),
+                        "Error", JOptionPane.ERROR_MESSAGE);
+                    ValidadorLicencia.escribirLog("Error no manejado: " + e.getMessage());
+                    System.exit(1);
                 }
-
-                if (!isMacValid)
-                {
-                    JOptionPane.showMessageDialog(null, "La licencia no es válida para la mac: " + address + message);
-                    System.exit(0); // licencia no válida
-                }
-
-            //*/
-            formulario.setVisible(true);
+            } else {
+                System.out.println("Validación de licencia desactivada - Modo desarrollo");
             }
-        });
-    }
+            
+            // ESTA PARTE SIEMPRE SE EJECUTA (está fuera del if)
+            // Continuar con la inicialización normal del formulario
+            frmConfigurador formulario = new frmConfigurador();
+            formulario.setVisible(true);
+        }
+    });
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnEliminarCert;

@@ -313,7 +313,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblInfo" pref="399" max="32767" attributes="0"/>
+                          <Component id="lblInfo" pref="389" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -501,7 +501,7 @@
                                           <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                                           <Component id="jLabel4" min="-2" pref="154" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cboalgoritmo" pref="229" max="32767" attributes="0"/>
+                                          <Component id="cboalgoritmo" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -563,7 +563,7 @@
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtTextoFIrmante" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="62" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="btn_logo" min="-2" pref="75" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
@@ -918,8 +918,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtTextoFIrmante">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Firmado por:"/>
+                    <Property name="text" type="java.lang.String" value="Firmado digitalmente por:"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTextoFIrmanteActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
