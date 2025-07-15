@@ -742,7 +742,7 @@ public class Firmador
                 sap = stp.getSignatureAppearance();
 
                 if(cerrardocumento)
-                    sap.setCertificationLevel(PdfSignatureAppearance.NOT_CERTIFIED);
+                    sap.setCertificationLevel(PdfSignatureAppearance.CERTIFIED_NO_CHANGES_ALLOWED);
 
                 sap.setLocation(c_locacion);
                 sap.setReason(c_motivo);
@@ -815,8 +815,8 @@ public class Firmador
                                 textofirma = textofirma + "Empresa: " + c_empresa + "\n";
                         }
 
-                        if(c_locacion.length() > 0)
-                            textofirma = textofirma +  "Lugar: " + c_locacion + "\n";
+                        //if(c_locacion.length() > 0)
+                        //    textofirma = textofirma +  "Lugar: " + c_locacion + "\n";
 
                         if(c_motivo.length() > 0)
                             textofirma = textofirma +  "Motivo : " + c_motivo + "\n";

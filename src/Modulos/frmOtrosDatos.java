@@ -33,12 +33,15 @@ public class frmOtrosDatos extends javax.swing.JDialog
     {
         super(parent, modal);
         initComponents();
+        jLabel2.setVisible(false);
+        txtlocalidad.setVisible(false);
         btnVerDocumentoFirmado.setEnabled(false);
         cambiarColor(btnVerDocumentoFirmado, java.awt.Color.white, new Color(97, 120, 134));
         txtFirmante.setText(frmFirmador.configuracion.getFirmante().getCertificado().getCn());
         txtEmpresa.setText(frmFirmador.configuracion.getFirmante().getCertificado().getEmpresa());
         txtCargo.setText(frmFirmador.configuracion.getFirmante().getCertificado().getCargo());
         txtmotivo.setText(frmFirmador.configuracion.getVg_motivo());
+        //txtmotivo.setText("SSigner Configuración v 2.5.1.1");
         
         this.firmante = frmFirmador.repositorios.getFirmanteElegido();
         
@@ -48,7 +51,17 @@ public class frmOtrosDatos extends javax.swing.JDialog
             txtmotivo.setSelectionEnd(txtmotivo.getText().length());
         }
 
-        txtlocalidad.setText(frmFirmador.configuracion.getVg_localidad());
+        //txtlocalidad.setText(frmFirmador.configuracion.getVg_localidad());    
+        txtlocalidad.setText("SSigner Configuración v 2.5.1.1");    
+
+        if (txtlocalidad.getText().length() > 0) {
+            txtlocalidad.setEnabled(false);  // Deshabilitar el campo
+            txtlocalidad.setBackground(new Color(105, 105, 105));  // Cambiar el fondo a gris
+            txtlocalidad.setForeground(new Color(25, 25, 112) );
+        } else {
+            txtlocalidad.setEnabled(true);  // Habilitar el campo si no está seteado
+            txtlocalidad.setBackground(Color.WHITE);  // Fondo blanco
+        }
     }
 
     public frmOtrosDatos(java.awt.Dialog parent, boolean modal, Firmador firmar, Firmante firmante)

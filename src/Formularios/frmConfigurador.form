@@ -104,7 +104,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="ctrl_sub_menu_motivo_locacion">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Motivo y localidad"/>
+                <Property name="text" type="java.lang.String" value="Motivo y Version"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ctrl_sub_menu_motivo_locacionActionPerformed"/>

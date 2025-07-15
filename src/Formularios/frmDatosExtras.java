@@ -17,12 +17,24 @@ public class frmDatosExtras extends javax.swing.JDialog {
         initComponents();
         ctrl_txt_firma_visible_motivo.requestFocus();
         ctrl_txt_firma_visible_motivo.setText(configuracion.getVg_motivo());
+        //ctrl_txt_firma_visible_motivo.setText("SSigner Configuración v 2.5.1.1");
         if(ctrl_txt_firma_visible_motivo.getText().length()>0){
             ctrl_txt_firma_visible_motivo.setSelectionStart(0);
             ctrl_txt_firma_visible_motivo.setSelectionEnd(ctrl_txt_firma_visible_motivo.getText().length());
         }
 
-        ctrl_txt_firma_visible_localidad.setText(configuracion.getVg_localidad());
+        //ctrl_txt_firma_visible_localidad.setText(configuracion.getVg_localidad());
+        ctrl_txt_firma_visible_localidad.setText("SSigner Configuración v 2.5.1.1");
+
+        if (ctrl_txt_firma_visible_localidad.getText().length() > 0) {
+            ctrl_txt_firma_visible_localidad.setEnabled(false);  // Deshabilitar el campo
+            ctrl_txt_firma_visible_localidad.setBackground(new Color(105, 105, 105));  // Cambiar el fondo a gris
+            ctrl_txt_firma_visible_localidad.setForeground(new Color(25, 25, 112) );
+        } else {
+            ctrl_txt_firma_visible_localidad.setEnabled(true);  // Habilitar el campo si no está seteado
+            ctrl_txt_firma_visible_localidad.setBackground(Color.WHITE);  // Fondo blanco
+        }
+        
         ctrl_txt_auxiliar.setVisible(false);
         ctrl_chk_ventana_volver_mostrar.setSelected(frmConfigurador.configuracion.isVg_ventana_volver_abrir());
         setLocationRelativeTo(parent);
@@ -88,7 +100,7 @@ public class frmDatosExtras extends javax.swing.JDialog {
 
         lblTitulo.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitulo.setText("Motivo y Localidad");
+        lblTitulo.setText("Motivo y Version");
 
         btnCargar2.setBackground(new java.awt.Color(211, 111, 66));
         btnCargar2.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
@@ -196,7 +208,7 @@ public class frmDatosExtras extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Segoe UI Light", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 83, 154));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Localidad : ");
+        jLabel2.setText("Version : ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

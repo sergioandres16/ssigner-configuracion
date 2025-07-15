@@ -1404,7 +1404,7 @@ public final class frmConfigurador extends javax.swing.JFrame
             }
         });
 
-        ctrl_sub_menu_motivo_locacion.setText("Motivo y localidad");
+        ctrl_sub_menu_motivo_locacion.setText("Motivo y Version");
         ctrl_sub_menu_motivo_locacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ctrl_sub_menu_motivo_locacionActionPerformed(evt);

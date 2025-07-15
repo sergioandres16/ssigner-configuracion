@@ -153,7 +153,7 @@
                   <Font name="Segoe UI Light" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Motivo y Localidad"/>
+                <Property name="text" type="java.lang.String" value="Motivo y Version"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnCargar2">
@@ -366,7 +366,7 @@
                       <Color blue="9a" green="53" red="0" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="4"/>
-                    <Property name="text" type="java.lang.String" value="Localidad : "/>
+                    <Property name="text" type="java.lang.String" value="Version : "/>
                   </Properties>
                 </Component>
               </SubComponents>
